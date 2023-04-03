@@ -1,0 +1,158 @@
+.locate-wrap{
+
+    position: absolute;
+    top: 125%;
+    left: -8px;
+    width: 420px;
+    min-width: 280px;
+    border-radius: 3px;
+    color: #677279;
+    background: #fff;
+    border: solid 1px #dfe3e8;
+    box-shadow: 0 1px 5px 2px rgb(0 0 0 / 10%);
+    z-index: 100;
+    .locate-content{
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        padding: 15px 20px;
+        .locate-container{
+            position: relative;
+            .locate-close{
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 30px;
+                right: 10px;
+                top: 13px;
+                z-index: 5;
+                border: 0;
+                background: transparent;
+                text-align: center;
+                outline: none;
+                right: -4px;
+                top: -12px;
+                .icon{
+                    font-size: 20px;
+                }
+            }
+            .locate-title{
+                position: relative;
+                padding: 0 0 10px;
+                border-bottom: 1px solid #eae4e8;
+                text-align: center;
+                .txt-title{
+                    font-size: 18px;
+                    color: #333333;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    margin: 0;
+                    font-weight: 500;
+                }
+            }
+            .locate-main{
+                padding: 15px 20px 0 0;
+                max-height: 55vh;
+                overflow: scroll;
+                overscroll-behavior: none;
+                margin-right: -20px;
+                .filter-address{
+                    margin-bottom: 3px;
+                    .filter-select{
+                        margin-right: -5px;
+                        margin-left: -5px;
+                        display: flex;
+                        .select-item{
+                            flex-basis: 0;
+                            flex-grow: 1;
+                            min-width: 0;
+                            max-width: 50%;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            margin-bottom: 10px;
+                            .filter-province{
+                                display: block;
+                                font-weight: 500;
+                                font-size: 13px;
+                                margin: 0 0 5px;
+                            }
+                            .field-select{
+                                position: relative;
+                                .filter-province,.filter-district{
+                                    padding: 0px 8px;
+                                    padding-right: 25px;
+                                    cursor: pointer;
+                                    outline: none;
+                                    text-overflow: ellipsis;
+                                    border-radius: 4px;
+                                    height: 34px;
+                                    line-height: 32px;
+                                    background: #ffffff;
+                                    border: 1px solid #eae4e8;
+                                    font-size: 13px;
+                                    width: 100%;
+                                    color: #000;
+                                    font-weight: 500;
+                                    user-select: none;
+                                    appearance: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .choose-address{
+                    border: 1px solid rgba(249, 187, 1, 0.18);
+                    border-radius: 5px;
+                    padding: 6px 15px;
+                    font-size: 13px;
+                    background: rgba(249, 187, 1, 0.1);
+                    color: #252a2b;
+                    .choose-address-view{
+                        display: block;
+                        font-weight: 500;
+                    }
+                }
+                .province-address{
+                    padding: 10px 0;
+                    .address-here{
+                        color: #000;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                    }
+                    .list-address{
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        .item-address{
+                            &:hover{
+                                background: rgba(249, 187, 1, 0.05);
+                            }
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            padding: 10px 0 10px 10px;
+                            font-size: 13px;
+                            color: #252a2b;
+                            border-top: 1px dotted #eae4e8;
+                            .item-icon{
+                                margin-right: 12px;
+                                font-size: 18px;
+                                color:#f9bb01;
+                            }
+                            .item-info{
+                                .address-name{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,31 @@
+/*
+ * General styles
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300&display=swap');
+ body, html {
+    background-image: "#fff";
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Quicksand";
+    font-size: $base-size - 2px;
+    height: 100vh;
+    overflow: scroll;
+}
+a{
+  text-decoration: none !important;
+}
+.content-container {
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $base-size + 4px;
+    margin-top: 15px;
+    color: $colormain;
+  }
+  .content {
+    margin: 15px 30px;
+    box-shadow: 2px 2px 4px 0 $box-shadow-color;
+    -webkit-box-shadow: 2px 2px 4px 0 $box-shadow-color;
+  }
+}

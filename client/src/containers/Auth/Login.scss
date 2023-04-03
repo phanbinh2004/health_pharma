@@ -1,0 +1,27 @@
+.wrap-login{
+    &.bg{
+        height: 100vh !important;
+        background-image: linear-gradient(to right, #8360c3, #2ebf91);
+        .back-home{
+            position: absolute;
+            color: #2ebf91;
+            top: 0;
+            background: #fff;
+            border-radius: 2px;
+
+        }
+        .mw{
+            .account-form{
+                max-width: 550px !important;
+                border-radius: 5px;
+                .tab-form{
+                    .field{
+                        input{
+                            height: 50px !important;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}

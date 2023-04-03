@@ -1,0 +1,313 @@
+.my-account{
+    width: 100%;
+    height: 100vh;
+    .content{
+        height: 100%;
+        max-width: 1400px;
+        width: 100%;
+        padding:40px 15px;
+        margin-right: auto;
+        margin-left: auto;
+        .header{
+            position: relative;
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0px 0;
+            line-height: initial;
+            &::after{
+                position: absolute;
+                content: "";
+                background: #000;
+                display: block;
+                width: 60px;
+                height: 4px;
+                margin: 20px auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .heading{
+            padding-left: 10px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        .list-control{
+            .list-manage{
+                list-style: none;
+                li{
+                    // width: 75%; 
+                    cursor: pointer;
+                    margin: 3px 0;
+                    border-right: 1px solid #fabb00;
+                    padding: 5px 0px 5px 10px;
+                    border-radius: 5px;
+                    &:hover{
+                        background: #fabb00;
+                        color: #fff
+                    }
+                }
+                a{
+                    color: #252a2b;
+                    &.active{
+                        li{
+                            background: #fabb00;
+                            color: #fff
+                        }
+                    }
+                    li{
+                        display: block;
+                        position: relative;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .main-info{
+            // padding: 30px 5px;
+            // background: #fff;
+            // border-radius: 6px;
+            // height: 100%;
+            .info-account{
+                h3{
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    position: relative;
+                    border-bottom: 1px solid #ededed;
+                    padding-bottom: 8px;
+                }
+                .info{
+                    .info-address{
+                        .info-name,.info-email{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 21px;
+                            margin: 10px 0 5px;
+                        }
+                        a{
+                            color: #252a2b;
+                            &:hover{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .wrap-address{
+                .edit-address{
+                    .table-address{
+                        .title-header{
+                            .address-header{
+                                margin-bottom: 0;
+                                font-size: 16px;
+                                padding: 14px 65px 14px 10px;
+                                background-color: #d9edf7;
+                                border-color: #bce8f1;
+                                position: relative;
+                                h3{
+                                    margin: 0;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    strong{
+                                        font-weight: 700;
+                                    }
+                                }
+                                .action-right{
+                                    position: absolute;
+                                    z-index: 99;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    text-align: right;
+                                    .action_link{
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        height: 100%;
+                                        line-height: 100%;
+                                        width: 30px;
+                                        padding: 14px 0;
+                                        text-align: center;
+                                        button{
+                                            border: none;
+                                            outline: none;
+                                            background: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                            .info-address{
+                                margin-bottom: 15px;
+                                border-top: 0px solid #ddd;
+                                background: #fbfbfb;
+                                padding: 5px 15px 15px;
+                                .view-address{
+                                    .large_view{
+                                        display: flex;
+                                        .lb-left{
+                                            width: 35%;
+                                            padding-right: 10px;
+                                        }
+                                        .lb-right{
+                                            width: 65%;
+                                        }
+                                    }
+                                }
+                            }
+                            .edit-info-address{
+                                margin-top: 4px;
+                                .input-group{
+                                    margin: 15px 0px;
+                                    position: relative;
+                                    display: table;
+                                    width: 100%;
+                                    border-collapse: separate;
+                                    .input-ico{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 35px;
+                                        height: 34px;
+                                        line-height: 34px;
+                                        text-align: center;
+                                        border-radius: 0;
+                                        color: #DAD9D9;
+                                        background-color: #ebebeb;
+                                    }
+                                    input{
+                                        margin-left: 35px;
+                                        width: calc(100% - 35px);
+                                        height: 34px;
+                                        padding: 5px 15px;
+                                        font-size: 14px;
+                                        color: #555;
+                                        background-color: #fff;
+                                        border: 1px solid #ebebeb;
+                                        -webkit-border-radius: 0;
+                                        border-radius: 0;
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                        outline: none;
+                                        overflow: visible;
+                                    }
+                                }
+                                .action-bottom{
+                                    button{
+                                        height: 35px;
+                                        line-height: 35px;
+                                        margin-right: 5px;
+                                        font-size: 14px;
+                                        padding: 0 30px;
+                                        border: 0;
+                                        background: #323232;
+                                        color: #fff;
+                                        display: inline-block;
+                                        border-radius: 0;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        outline: 0;
+                                        border-radius: 4px;
+                                    }
+                                    span{
+                                        .close-edit{
+                                            cursor: pointer;
+                                            color: #fabb00;
+                                            padding: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .add-address{
+                    .add-header{
+                        display: inline-block;
+                        padding: 10px;
+                        background: #323232;
+                        color: #fff !important;
+                        text-transform: uppercase;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    .add-inner{
+                        padding: 5px 15px 15px;
+                        background: #fbfbfb;
+                        .edit-info-address{
+                                margin-top: 4px;
+                                .input-group{
+                                    margin: 15px 0px;
+                                    position: relative;
+                                    display: table;
+                                    width: 100%;
+                                    border-collapse: separate;
+                                    .input-ico{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 35px;
+                                        height: 34px;
+                                        line-height: 34px;
+                                        text-align: center;
+                                        border-radius: 0;
+                                        color: #DAD9D9;
+                                        background-color: #ebebeb;
+                                    }
+                                    input{
+                                        margin-left: 35px;
+                                        width: calc(100% - 35px);
+                                        height: 34px;
+                                        padding: 5px 15px;
+                                        font-size: 14px;
+                                        color: #555;
+                                        background-color: #fff;
+                                        border: 1px solid #ebebeb;
+                                        -webkit-border-radius: 0;
+                                        border-radius: 0;
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                        outline: none;
+                                        overflow: visible;
+                                    }
+                                }
+                                .action-bottom{
+                                    button{
+                                        height: 35px;
+                                        line-height: 35px;
+                                        margin-right: 5px;
+                                        font-size: 14px;
+                                        padding: 0 30px;
+                                        border: 0;
+                                        background: #323232;
+                                        color: #fff;
+                                        display: inline-block;
+                                        border-radius: 0;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        outline: 0;
+                                        border-radius: 4px;
+                                    }
+                                    span{
+                                        .close-edit{
+                                            cursor: pointer;
+                                            color: #fabb00;
+                                            padding: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+}

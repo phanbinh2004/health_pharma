@@ -1,0 +1,25 @@
+export const path = {
+  HOME: "/",
+  CART: "/cart",
+  PRODUCT: "/products",
+  LOGIN: "/auth/login",
+  RECOVERY: "/auth/login/recovery",
+  REGISTER: "/auth/register",
+  CATEGORY: "/category/:category/:id",
+  // Admin
+  LOGIN_ADMIN: "/admin/login",
+  ADMIN: "/manager/admin",
+  ADMIN_PROFILE: "/manager/admin/profile",
+  MANAGE_USER: "/manager/admin/manage-users",
+  MANAGE_IMAGE: "/manager/admin/manage-image",
+  MANAGE_CART: "/manager/admin/manage-carts",
+  MANAGE_PRODUCT: "/manager/admin/manage-products",
+  MANAGE_FEEDBACK: "/manager/admin/manage-feebacks",
+  MANAGE_ORDER: "/manager/admin/manage-orders",
+  MANAGE_DASHBOARD: "/manager/admin/dashboard",
+  // account
+  MY_ACCOUNT: "/account",
+  MY_ADDRESS: "/account/address",
+  MY_ORDER: "/cart",
+  PAY: "/cart/pay",
+};
